@@ -1,4 +1,3 @@
-using System;
 using Domain.Data;
 using JetBrains.Annotations;
 using Presentation.Views;
@@ -14,7 +13,7 @@ namespace Presentation.Controllers
 
         private void Start()
         {
-            player.Initialize(new Vector3(0, 1, -20));
+            player.Initialize(new Vector3(0, 1.75F, -20));
             Instantiate(prefab, viewParent).GetComponent<PlayerView>().Initialize(player);
         }
 

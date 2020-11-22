@@ -1,5 +1,4 @@
 using Domain.Data;
-using TMPro;
 using UnityEngine;
 
 namespace Presentation.Views

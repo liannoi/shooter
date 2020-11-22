@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 namespace Domain.Data
 {
@@ -20,10 +19,6 @@ namespace Domain.Data
         {
             position += new Vector3(0, 0, Input.GetAxis("Vertical") * speed);
             position += new Vector3(Input.GetAxis("Horizontal") * speed, 0, 0);
-        }
-
-        public void Fire()
-        {
         }
     }
 }
