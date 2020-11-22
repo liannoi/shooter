@@ -14,7 +14,10 @@ namespace Presentation.Controllers
         private void Start()
         {
             foreach (var enemy in enemies.Enemies)
+            {
+                enemy.Initialize();
                 Instantiate(prefab, viewParent).GetComponent<EnemyView>().Initialize(enemy);
+            }
         }
     }
 }

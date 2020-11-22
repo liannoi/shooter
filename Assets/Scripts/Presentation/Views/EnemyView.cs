@@ -8,6 +8,13 @@ namespace Presentation.Views
         [SerializeField] private GameObject prefab;
         private EnemyData _enemy;
 
+        private void OnCollisionEnter(Collision other)
+        {
+            Debug.Log($"+ {_enemy.Price}");
+            _enemy.OnDied();
+            Destroy(gameObject);
+        }
+
         public void Initialize(EnemyData enemy)
         {
             _enemy = enemy;
